@@ -14,27 +14,28 @@ Copyright &copy; 2025 Sameer Alam.
 Released under the MIT License.
 """
 
-# ----------------------------------------------------------------------------
-# Navigation (Explicit & User-Friendly)
-# ----------------------------------------------------------------------------
 nav = [
-  { "Overview" = "index.md" },
-  { "Getting Started" = [
-      { "Installation" = "install.md" },
-      { "Quick Start" = "usage.md" },
+  { title = "Overview", page = "index.md" },
+
+  { title = "Getting Started", children = [
+      { title = "Installation", page = "install.md" },
+      { title = "Quick Start", page = "usage.md" }
     ]
   },
-  { "Core Concepts" = [
-      { "Features" = "features.md" },
-      { "Security & Ethics" = "security.md" },
+
+  { title = "Core Concepts", children = [
+      { title = "Features", page = "features.md" },
+      { title = "Security & Ethics", page = "security.md" }
     ]
   },
-  { "Project" = [
-      { "Roadmap" = "roadmap.md" },
-      { "Changelog" = "changelog.md" },
+
+  { title = "Project", children = [
+      { title = "Roadmap", page = "roadmap.md" },
+      { title = "Changelog", page = "changelog.md" }
     ]
-  },
+  }
 ]
+
 
 # ----------------------------------------------------------------------------
 # Theme Configuration
